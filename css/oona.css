@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+#bottom {
+    bottom: 1px;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+}
+
+#center {
+    height: 255px;
+    left: 50%;
+    margin: -200px 0 0 -110px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 220px;
+    z-index: 15;
+}
+
+#polaroid {
+    position: relative;
+    width: 220px;
+}
+
+#polaroid:before,
+#polaroid:after {
+    background-color: rgba(220, 212, 176, 0.85);
+    content: '';
+    display: block;
+    height: 25px;
+    position: absolute;
+}
+
+#polaroid:after {
+    left: 80%;
+    bottom: -10px;
+    width: 70px;
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+#polaroid:before {
+    left: -20px;
+    top: -15px;
+    width: 65px;
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
+
+#polaroid img {
+    border: 10px solid rgb(255, 255, 255);
+    border-bottom: 45px solid rgb(255, 255, 255);
+    -moz-box-shadow: 3px 3px 3px rgb(119, 119, 119);
+    -webkit-box-shadow: 3px 3px 3px rgb(119, 119, 119);
+    box-shadow: 3px 3px 3px rgb(119, 119, 119);
+}
+
+#polaroid p {
+    bottom: 0px;
+    color: rgb(100, 100, 100);
+    font: 200 22px/0.3 'Reenie Beanie', Helvetica, sans-serif;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}

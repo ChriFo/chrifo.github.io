@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: url('/images/background.jpg');
+    background-size: cover;
+    color: rgb(250, 250, 250);
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+h2,
+h5 {
+    font-weight: normal;
+}
+
+a,
+a:hover {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.vertical-center {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.vertical-center::before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.vertical-center>.container {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fa {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.fa:hover {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.fa-github:hover {
+    color: #4183c4;
+}
+
+.fa-linkedin-square:hover {
+    color: #0077b5;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-xing:hover {
+    color: #026466;
+}
+
+.fa-github-bg,
+.fa-linkedin-square-bg {
+    position: relative;
+}
+
+.fa-github-bg:hover::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    z-index: -1;
+    top: 2px;
+    left: 4px;
+    width: 15px;
+    height: 21px;
+    border-radius: 25px;
+}
+
+.fa-linkedin-square-bg:hover::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    z-index: -1;
+    top: 2px;
+    left: 3px;
+    width: 15px;
+    height: 18px;
+}
